@@ -1,0 +1,333 @@
+.tf-header {
+    background-image: linear-gradient(to right bottom, rgba(248, 244, 244, 0.7), rgba(60, 14, 14, 0.7));
+    min-height: var(--header-with-nav-height);
+    position: relative;
+    z-index: 1000;
+}
+
+.tf-navbar {
+    display: flex;
+    justify-content: space-between;
+    height: var(--header-with-nav-height);
+}
+
+.tf-logo {
+    max-width: 120px;
+    height: 100px;
+    position: relative;
+}
+
+.tf-logo-img {
+    position: absolute;
+    height: 100%;
+    display: inline-block;
+    width: 100%;
+    left: 0;
+}
+
+.tf-logo-text {
+    position: absolute;
+    font-size: 2.4rem;
+    font-weight: 500;
+    line-height: 2.4rem;
+    display: inline-block;
+    color: var(--text-color);
+    top: 40%;
+    left: 50%;
+    transform: translateX(50%);
+}
+
+.tf-navbar-item {
+    font-size: 1.6rem;
+    color: var(--text-color);
+    font-weight: 500;
+    line-height: 1.6rem;
+    display: inline-flex;
+    position: relative;
+    margin: 0 8px;
+}
+
+/* open menu */
+.tf-navbar-item:hover .tf-navbar-menu {
+    display: block;
+}
+
+.tf-navbar-item:hover .tf__notify {
+    display: block;
+}
+
+.tf-navbar-menu {
+    position: absolute;
+    top: 24px;
+    left: -1px;
+    width: 140px;
+    padding: 8px;
+    background-color: rgba(248, 244, 244, 0.7);
+    border-radius: 2px;
+    display: none;
+    z-index: 1;
+
+}
+
+.tf-navbar-menu::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 12px;
+    /* background-color: red; */
+    left: 0;
+    top: -4px;
+}
+
+.tf-navbar-menu-items {
+    font-size: 1.4rem;
+    line-height: 1.6rem;
+}
+
+.tf-navbar-menu-items:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.tf-navbar-menu-link {
+    color: var(--text-color);
+    display: block;
+}
+
+.tf-navbar-icon-link {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+}
+
+.home-page {
+    position: relative;
+    top: 0;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.03);
+    margin-top: var(--header-with-nav-height);
+}
+
+.tf-banner {
+    display: flex;
+    line-height: 0;
+    min-height: 235px;
+    width: 100%;
+}
+
+.tf-banner-main {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    object-fit: cover;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+}
+
+.custom-carousel-item {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.tf-banner--with-right {
+    flex: 1 1 50%;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0;
+    z-index: 1;
+}
+
+.tf-banner--with-right-item {
+    /* width: 75% !important; */
+    height: auto;
+}
+
+.tf-banner--with-right-img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    object-fit: contain;
+}
+
+.tf-product-name {
+    background-image: linear-gradient(to right bottom, rgba(248, 244, 244, 0.05), rgba(60, 14, 14, 0.05));
+
+}
+
+.tf-product-title {
+    font-size: 2.4rem;
+    border-radius: 2px;
+    color: var(--text-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+.tf-product-card {
+    border: 1px transparent !important;
+    box-shadow: 0 1px 2px 0 rgb(0 0 0 / 10%);
+    transition: transform linear 0.05s;
+    will-change: transform;
+
+}
+
+.tf-product-card-img {
+    border-top-left-radius: 2px !important;
+    border-top-right-radius: 2px !important;
+}
+
+.tf-product-card:hover {
+    box-shadow: 0 0.0625rem 20px 0 rgb(0 0 0 / 5%);
+    transform: translateY(-1px);
+}
+
+.card-body-item-name {
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: 600;
+    color: var(--text-color);
+    position: relative;
+    display: inline-block;
+}
+
+.card-body-item-name::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    background-color: #444;
+    bottom: -2px;
+    height: 2px;
+    left: 0;
+    transform: scaleX(0);
+    transform-origin: bottom right;
+    transition: transform 0.25s linear;
+}
+
+.card-body-item-name:hover::after {
+    transform-origin: bottom left;
+    transform: scaleX(1);
+
+}
+
+.card-body-item-price {
+    font-size: 1.6rem;
+    opacity: 0.5;
+    color: var(--text-color);
+}
+
+.tf-talk-name {
+    background-image: linear-gradient(to right bottom, rgba(248, 244, 244, 0.05), rgba(60, 14, 14, 0.05));
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tf-talk-title {
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    line-height: 1.8rem;
+    border-radius: 2px;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.tf-talk-product {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+
+}
+
+.tf-talk-card {
+    background-color: transparent !important;
+    padding: 56px;
+    border: none !important;
+    overflow: hidden;
+}
+
+.tf-talk-card-img {
+    border-radius: 8px;
+}
+
+.tf-talk-card-img:hover {
+    transform: scale(1.1);
+}
+
+.tf-talk-card-body {
+    padding: 0 !important;
+}
+
+.tf-talk-card-subtitle,
+.tf-talk-card-title,
+.tf-talk-card-text {
+    color: var(--text-color) !important;
+}
+
+.tf-talk-card-subtitle {
+    opacity: 0.5;
+    font-size: 1.2rem !important;
+    line-height: 1.2rem;
+}
+
+.tf-talk-card-title {
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+    height: 1.7rem;
+    font-weight: 600;
+    color: var(--text-color);
+    overflow: hidden;
+    /* display: block; */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+}
+
+.tf-talk-card-title:hover {
+    color: rgba(60, 14, 14, 0.7) !important;
+    transition: linear 0.25s;
+}
+
+.tf-talk-card-text {
+    font-size: 1.4rem;
+    font-weight: 400;
+    text-align: left;
+    line-height: 1.8rem;
+}
+
+.tf-footer {
+    background-color: #000;
+    height: auto;
+    padding: 34px 0 54px;
+}
+
+.tf-footer-row {
+    padding: 0;
+    margin: 0;
+}
+
+.tf-footer-col-title {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+.tf-footer-col-linklist {
+    padding: 0;
+    margin: 0;
+}
+
+.tf-footer-col-linklist li {
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+
+.tf-footer-col hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #fff;
+    opacity: 1;
+}

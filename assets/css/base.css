@@ -1,0 +1,138 @@
+@import url(./notify.css);
+:root {
+    --white-color: #fff;
+    --text-color: #333;
+    --border-color: #dbdbdb;
+    --header-height: 160px;
+    --navbar-height: 50px;
+    --header-with-nav-height: calc(var(--header-height) - var(--navbar-height));
+    --black-color: #000;
+    --primary-color:rgba(60, 14, 14, 1);
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    min-height: 100vh;
+}
+
+html {
+    /* Hack 62.5%==10px */
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+    outline: none;
+}
+
+li {
+    list-style: none;
+}
+
+.container-fluid {
+    padding: 0 !important;
+}
+
+.container {
+    padding: 0 !important;
+}
+
+.navbar-collapse {
+    justify-content: space-between;
+}
+
+
+.navbar-toggler-icon {
+    width: 2rem;
+    height: 2rem;
+
+}
+
+.product-page-line {
+    height: 20px;
+    width: 2px !important;
+    background-color: gray;
+}
+
+/* Animation */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes Growth {
+    from {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media (min-width: 64em) {
+    .p-left {
+        position: relative;
+        left: 10%;
+    }
+
+    .seperate::after {
+        content: "";
+        display: block;
+        border-left: 1px solid hsla(0, 0%, 100%, 0.3);
+        position: absolute;
+        height: 16px;
+        left: -8px;
+        /* right: 4px; */
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 992px) {
+    .tf-header {
+        background-image: linear-gradient(to right bottom, rgba(248, 244, 244, 0.7), rgba(60, 14, 14, 0.7));
+    }
+
+    .bg-custom-md {
+        background-image: linear-gradient(to right bottom, rgba(248, 244, 244, 0.7), rgba(60, 14, 14, 0.7)) !important;
+    }
+    .tf-navbar-list li.li-disabled{
+        display: none;
+    }
+}

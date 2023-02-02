@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Coffee - Cửa hàng bán cà phê</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="icon" href="./assets/img/logo/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/base.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header class="tf-header fixed-top">
+            <nav class="tf-navbar container-fluid navbar navbar-expand-lg">
+                <div class="w-100 tf-logo text-sm-center mx-sm-3 d-flex">
+                    <a href="./index.html" class="navbar-brand">
+                        <div class="tf-logo-img"
+                            style="background-image: url(./assets/img/logo/logo.png); background-size: contain; background-repeat: no-repeat; background-position: center;">
+                        </div>
+                        <span class="tf-logo-text">The Coffee</span>
+                    </a>
+                </div>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse bg-custom-md d-md-flex flex-column justify-content-start flex-lg-row justify-content-lg-between pb-2 pb-lg-0"
+                    id="navbarSupportedContent">
+                    <ul class="navbar-nav tf-navbar-list p-left">
+                        <li class="tf-navbar-item nav-item"><a href="#sanpham" class="tf-navbar-link nav-link">
+                                Cà phê
+                            </a></li>
+                        <li class="tf-navbar-item nav-item"><a href="#sanpham" class="tf-navbar-link nav-link">
+                                Trà
+                            </a></li>
+                        <li class="tf-navbar-item nav-item"><a href="#" class="tf-navbar-link nav-link">Menu<i
+                                    class="fa-solid fa-caret-down px-sm-1" style="font-size: 1.2rem;"></i></a>
+                            <div class="tf-navbar-menu">
+                                <ul class="tf-navbar-menu-list px-sm-1">
+                                    <li class="tf-navbar-menu-items my-sm-2"><a href="" class="tf-navbar-menu-link">Cà
+                                            Phê</a></li>
+                                    <li class="tf-navbar-menu-items my-sm-2"><a href=""
+                                            class="tf-navbar-menu-link">Trà</a>
+                                    </li>
+                                    <li class="tf-navbar-menu-items my-sm-2"><a href="" class="tf-navbar-menu-link">Bánh
+                                            & Snack</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="tf-navbar-item nav-item"><a href="#blog" class="tf-navbar-link nav-link">Blog</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav tf-navbar-list me-lg-5">
+
+                        <li class="tf-navbar-item li-disabled nav-item m-auto" style="cursor: pointer;"><span
+                                    class="end-100 translate-middle p-2 bg-danger border rounded-circle"
+                                    style="position: absolute; left: 14px; top: 2px;">
+                                </span><i class="fa-regular fa-bell me-4"></i>Thông báo
+                            <div class="tf__notify">
+                                <header class="tf__notify-header">
+                                    <h3 class="ms-2">Thông Báo Mới Nhận</h3>
+                                </header>
+                                <ul class="tf__notify-list">
+                                    <li class="tf__notify-items tf__notify-items--viewed">
+                                        <a href="" class="tf__notify-links">
+                                            <img src="https://cf.shopee.vn/file/dafe5debf17fa54c6132937855facd15_tn"
+                                                alt="" class="tf__notify-img">
+                                            <div class="tf__notify-info">
+                                                <span class="tf__notify-name">Lưu mã 800.000Đ, 25.12 Dùng
+                                                    ngay</span>
+                                                <p class="tf__notify-decs">🚚 Thêm Freeship Xtra đến 55.000Đ 🎉
+                                                    Loạt
+                                                    Deal hoàn 50% Xu 🛒 Áo hoodie, củ sạc, mặt nạ, chảo chống dính
+                                                    👉
+                                                    Săn mã, chốt deal - Sale nhiều bất tận</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="tf__notify-items">
+                                        <a href="" class="tf__notify-links">
+                                            <img src="https://cf.shopee.vn/file/90718e3014240cc428bd85b027202d05_tn"
+                                                alt="" class="tf__notify-img">
+                                            <div class="tf__notify-info">
+                                                <span class="tf__notify-name">LOẠT DEAL GIÁ SỐC GIẢM ĐẾN
+                                                    50%</span>
+                                                <p class="tf__notify-decs">🚚 Thêm Freeship đến 40.000Đ đang đợi
+                                                    🌀
+                                                    Kẹp tóc, áo hoodie, dép, bông tai... ✨ Săn sale tuyệt đỉnh -
+                                                    Chớp
+                                                    deal giá sốc</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                    <li class="tf__notify-items">
+                                        <a href="" class="tf__notify-links tf__notify-items--viewed">
+                                            <img src="https://cf.shopee.vn/file/74a291986d15506e613543cbb2f9bd79_tn"
+                                                alt="" class="tf__notify-img">
+                                            <div class="tf__notify-info">
+                                                <span class="tf__notify-name">SĂN HÀNG QUỐC TẾ CHỈ TỪ
+                                                    99.000Đ</span>
+                                                <p class="tf__notify-decs">🎉 Thêm loạt Voucher đến 50.000Đ từ
+                                                    shop
+                                                    🛒 Quần áo, đồ điện tử, đồ làm bếp... 💥 Số lượng có hạn - Săn
+                                                    ngay
+                                                    kẻo lỡ</p>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="tf__notify-footer">
+                                    <a href="" class="tf__notify-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
+                        </li>
+                        <li class="tf-navbar-item nav-item"><a href="/" class="tf-navbar-link nav-link">Đăng ký</a></li>
+                        <li class="tf-navbar-item nav-item seperate"><a href="/" class="tf-navbar-link nav-link">Đăng
+                                nhập</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div class="home-page">
+            <div class="container mt-sm-2">
+                <div class="tf-banner">
+                    <div class="row">
+                        <div class="col-auto col-sm-8">
+                            <div id="interval" class="carousel slide tf-banner-main" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active" data-bs-interval="2500">
+                                        <img src="./assets/img/banner/Love.png" class="d-block w-100" alt="Love">
+                                    </div>
+                                    <div class="carousel-item" data-bs-interval="2500">
+                                        <img src="./assets/img/banner/Support.png" class="d-block w-100" alt="Support">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="./assets/img/banner/Passion.png" class="d-block w-100" alt="Passion">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#interval"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#interval"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="tf-banner--with-right container my-2 col-sm-4">
+                            <div class="row h-100">
+                                <div class="tf-banner--with-right-item col-auto col-sm-auto my-sm-1">
+                                    <img src="./assets/img/banner/keothom20.png" class="tf-banner--with-right-img"
+                                        alt="">
+                                </div>
+                                <div class="tf-banner--with-right-item col-auto col-sm-auto my-1">
+                                    <img src="./assets/img/banner/thomngon.png" class="tf-banner--with-right-img w-100"
+                                        alt="">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tf-product container my-sm-3" id="sanpham">
+                <section class="tf-product-name py-3">
+                    <h2 class="tf-product-title text-center">Sản phẩm phổ biến</h2>
+                </section>
+                <div class="row row-cols-sm-4">
+                    <a href="./products/product-1.html" class="col-6 col-sm-3" style="padding: 20px;">
+                        <div class="tf-product-card card my-1 my-sm-1">
+                            <img class="tf-product-card-img card-img-top" src="./assets/img/product/caphesuada.png"
+                                alt="">
+                            <div class="card-body" style="padding: 0;">
+                                <div class="card-body-item p-2 p-sm-2">
+                                    <h3 class="card-body-item-name">Cà Phê Sữa Đá</h3>
+                                    <p class="card-body-item-price">49.000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/" class="col-6 col-sm-3" style="padding: 20px;">
+                        <div class="tf-product-card card my-1 my-sm-1">
+                            <img class="tf-product-card-img card-img-top" src="./assets/img/product/banhmithitnguoi.png"
+                                alt="">
+                            <div class="card-body" style="padding: 0;">
+                                <div class="card-body-item p-2 p-sm-2">
+                                    <h3 class="card-body-item-name">Bánh Mỳ Thịt Nguội</h3>
+                                    <p class="card-body-item-price">19.000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/" class="col-6 col-sm-3" style="padding: 20px;">
+                        <div class="tf-product-card card my-1 my-sm-1">
+                            <img class="tf-product-card-img card-img-top" src="./assets/img/product/trasennong.png"
+                                alt="">
+                            <div class="card-body" style="padding: 0;">
+                                <div class="card-body-item p-2 p-sm-2">
+                                    <h3 class="card-body-item-name">Trà Sen</h3>
+                                    <p class="card-body-item-price">49.000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/" class="col-6 col-sm-3" style="padding: 20px;">
+                        <div class="tf-product-card card my-1 my-sm-1">
+                            <img class="tf-product-card-img card-img-top" src="./assets/img/product/hiteavai.png"
+                                alt="">
+                            <div class="card-body" style="padding: 0;">
+                                <div class="card-body-item p-2 p-sm-2">
+                                    <h3 class="card-body-item-name">Trà Cam Vải</h3>
+                                    <p class="card-body-item-price">49.000 đ</p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="tf-talk container my-5 my-sm-5" id="blog">
+                <section class="tf-talk-name py-3">
+                    <h2 class="tf-talk-title m-0">Chuyện nhà người ta</h2>
+                </section>
+                <div class="row row-cols-sm-3">
+                    <a href="./blogs/blog-1.html" class="col-12 col-sm-4 tf-talk-product">
+                        <div class="card tf-talk-card">
+                            <img src="./assets/img/banner/caphe01.png" alt="" class="tf-talk-card-img card-img-top">
+                            <div class="tf-talk-card-body card-body">
+                                <div class="tf-talk-card-subtitle card-subtitle my-2">11/12/2022</div>
+                                <h3 class="tf-talk-card-title card-title">CÁCH NHẬN BIẾT HƯƠNG VỊ CÀ PHÊ ROBUSTA NGUYÊN
+                                    CHẤT DỄ DÀNG NHẤT</h3>
+                                <div class="tf-talk-card-text card-text">Cùng Arabica, Robusta cũng là loại cà phê nổi
+                                    tiếng được sử dụng phổ biến ở Việt Nam và nhiều nước khác trên thế giới. Với nhiều
+                                    đặc điểm riêng, không...</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/" class="col-12 col-sm-4 tf-talk-product">
+                        <div class="card tf-talk-card">
+                            <img src="./assets/img/banner/caphe02.png" alt="" class="tf-talk-card-img card-img-top">
+                            <div class="tf-talk-card-body card-body">
+                                <div class="tf-talk-card-subtitle card-subtitle my-2">07/11/2022</div>
+                                <h3 class="tf-talk-card-title card-title">BẬT MÍ NHIỆT ĐỘ LÝ TƯỞNG ĐỂ PHA CÀ PHÊ NGON,
+                                    ĐẬM ĐÀ HƯƠNG VỊ</h3>
+                                <div class="tf-talk-card-text card-text">Nhiệt độ nước là một yếu tố quan trọng để có
+                                    thể tạo nên những tách cà phê thơm ngon. Bạn đã biết nhiệt độ nước lý tưởng để
+                                    pha...</div>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="/" class="col-12 col-sm-4 tf-talk-product">
+                        <div class="card tf-talk-card">
+                            <img src="./assets/img/banner/caphe03.png" alt="" class="tf-talk-card-img card-img-top">
+                            <div class="tf-talk-card-body card-body">
+                                <div class="tf-talk-card-subtitle card-subtitle my-2">04/11/2022</div>
+                                <h3 class="tf-talk-card-title card-title">CÁCH PHA CÀ PHÊ PHIN THƠM NGON TRÒN VỊ</h3>
+                                <div class="tf-talk-card-text card-text">Có nhiều cách để pha một ly cà phê ngon, nhưng
+                                    đối với nhiều người Việt giây phút đợi chờ những giọt cà phê rơi từ chiếc phin đã
+                                    trở thành...</div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <footer class="tf-footer">
+            <div class="container">
+                <div class="tf-footer-row row row-cols-sm-3 pt-4 pt-sm-4">
+                    <div class="col col-sm-4 tf-footer-col">
+                        <h4 class="tf-footer-col-title text-white">
+                            Giới thiệu
+                        </h4>
+                        <ul class="tf-footer-col-linklist">
+                            <li>Về chúng tôi</li>
+                            <li>Sản phẩm</li>
+                            <li>Chuyện cà phê</li>
+                            <li>Cửa hàng</li>
+                        </ul>
+                    </div>
+                    <div class="col col-sm-4 tf-footer-col">
+                        <h4 class="tf-footer-col-title text-white">
+                            Điều khoản
+                        </h4>
+                        <ul class="tf-footer-col-linklist">
+                            <li>Điều khoản sử dụng</li>
+                            <li>Chính sách bảo mật thông tin</li>
+                        </ul>
+                    </div>
+                    <div class="col col-sm-4 tf-footer-col">
+                        <h4 class="tf-footer-col-title text-white">
+                            LIÊN HỆ
+                        </h4>
+                        <ul class="tf-footer-col-linklist">
+                            <li>
+                                <h5><i class="fa-solid fa-phone"></i> Số điện thoại: 0123445999</h5>
+                            </li>
+                            <li>
+                                <h5><i class="fa-solid fa-envelope"></i> Email: abc@gmail.com</h5>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col col-sm-12 tf-footer-col">
+                        <hr>
+                    </div>
+                    <div class="col col-sm-9">
+                        <ul class="tf-footer-col-linklist">
+                            <li>Công ty cổ phần thương mại dịch vụ Trà Cà Phê VN</li>
+                            <li>Địa chỉ: abcxyz, TP.HCM Điện thoại: 0862824120 Email: abcxyz@gmail.com</li>
+                            <li>© 2023 - The Coffee</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
