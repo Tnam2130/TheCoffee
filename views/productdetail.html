@@ -1,0 +1,46 @@
+<div ng-include src="'components/header.html'"></div>
+<div class="home-page">
+    <div class="container">
+        <div class="row">
+            <div class="col col-lg-12">
+                <div class="d-flex pb-3 align-items-center flex-wrap">
+                    <a href="#" class=" fw-semibold" style="font-size: 1.6rem; color: #111;">Menu</a>
+                    <div class="product-page-line mx-2"></div>
+                    <a href="#" class=" fw-semibold" style="font-size: 1.6rem; color: #111;">{{product.type}}</a>
+                    <div class="product-page-line mx-2"></div>
+
+                    <a href="#" class=" fw-semibold" style="font-size: 1.6rem; color: #555;">{{product.name}}</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col col-lg-6 px-5">
+                <img src="{{product.thumbnail}}" alt="">
+            </div>
+            <div class="col col-lg-6 px-5">
+                <h4 style="font-size: 3.2rem; line-height: 3.2rem; color: var(--text-color);">
+                    {{product.name}}
+                </h4>
+                <span class="d-block my-5" style="font-size: 2.2rem; color: var(--primary-color); font-weight: 600;">
+                    {{product.price | vietnamCurrency}}
+                </span>
+                <div class="d-flex w-50 ms-2">
+                    <button ng-click="handleDecreaseQuantity()" class="custom-btn-primary">-</button>
+                    <input ng-model="quantity" readonly="readonly" min="1" type="number"
+                        class="form-control w-100 text-center mx-1" />
+                    <button ng-click="handleIncreaseQuantity()" class="custom-btn-primary">+</button>
+                </div>
+                <button ng-click="showAddSuccessToast()" type="button" class="btn w-100 py-2 my-5"
+                    style="background-color: var(--primary-color); color: var(--text-color);"><span
+                        style="font-size: 1.8rem; font-weight: 500;">Đặt hàng</span></button>
+            </div>
+        </div>
+        <div class="row my-5">
+            <div class="col">
+                <h3 class="my-2 text-center" style="font-size: 1.8rem;">Mô tả sản phẩm</h3>
+                <p class="" style="font-size: 1.4rem; font-weight: 400; margin-bottom: 60px;">{{product.desc}}</p>
+            </div>
+            <hr style="margin-bottom: 60px;">
+        </div>
+    </div>
+</div>

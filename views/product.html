@@ -1,0 +1,36 @@
+<div ng-include src="'components/header.html'"></div>
+<div class="home-page">
+    <div class="container">
+        <!-- sau nay se repeat tu file categories.json -->
+        <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1">
+            <a ng-repeat="product in products" href="#!productdetail/{{product.id}}" class="col-6 col-sm-3"
+                style="padding: 20px">
+                <div class="tf-product-card card my-1 my-sm-1">
+                    <img class="tf-product-card-img card-img-top" src="{{product.thumbnail}}" alt="" />
+                    <div class="card-body" style="padding: 0">
+                        <div class="card-body-item p-2 p-sm-2">
+                            <h3 class="card-body-item-name">{{product.name}}</h3>
+                            <p class="card-body-item-price">
+                                {{product.price | vietnamCurrency}}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+            <!-- <div class="" ng-if="selectedCategoryID.length===0 || selectedCategoryID.includes(product.categoryId)">
+                <button class="btn btn-primary" ng-click="setSelectedCategory(1)">1</button>
+                <button class="btn btn-primary" ng-click="setSelectedCategory(2)">2</button>
+            </div> -->
+        </div>
+    </div>
+</div>
+<!-- cái bộ lọc của anh thì hiện tại nó lọc theo giá với tên thế em muốn nó lọc theo loại sản phẩm thì như nào anh -->
+<!-- Anh viết function để lấy lại dữ liệu. Bộ lọc filter trong angularjs chỉ giúp em định dạng dữ liệu hiển thị thôi -->
+<!-- Thế nếu hiển thị thì nó có thể hiển thị theo kiểu loại sản phẩm k anh -->
+<!-- Anh làm như vậy đó là mình có cần viết lại k hay có thể tái chế lại của angular. Cái này thì anh viết mới nha. Chứ anh ko biết angularjs có làm được không -->
+<!-- Nếu em muốn lọc theo phân loại thì trong file product.json phải có categoryID . Mình sẽ dùng cái đó để lọc -->
+<!-- Vậy mình k thể lọc theo loại sản phẩm dưới dạng chuỗi đc hả anh. Chuỗi cũng được nhưng trong thực tế người ta sẽ lưu như vậy vì trong mysql người ta cũng lưu như thế mak -->
+<!-- Thế là mình cần 1 cái comboBox để 2 loại sau đó mình dùng filter của ang để lọc theo categoryID hả anh. Không dùng filter cũng đc. Em có thể dùng ng-if để xác định xem nó có được render hay không nha -->
+<!-- nếu dùng ng-if thì khi render ra mình cần phải repeat lại thế thì mình phải làm cách nào anh? -->
+<!-- Để anh ví dụ cho nha -->
+<!-- Mà thôi . Anh bận chút đã. Để khi khác nha -->

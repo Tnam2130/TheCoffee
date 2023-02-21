@@ -1,40 +1,46 @@
 .container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px !important;
+  padding-right: 15px !important;
 }
-.blog-banner-img{
-    background-image: url('../img/banner/caphe01.png');
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    height: 500px;
+.blog-banner-img {
+  background-image: url("var(--data-background)");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  height: 500px;
 }
-.blog-content{
-    margin: 2em 4em;
+.blog-content {
+  margin: 2em 4em;
 }
-.content-title{
-    font-size: 3.2rem;
-    line-height: 3.6rem;
+.content-title {
+  font-size: 3.2rem;
+  line-height: 3.6rem;
 }
-.content-subtitle{
-    margin: 1.6rem;
-    font-size: 1.6rem;
-    font-weight: 500;
-    line-height: 1.8rem;
+.content-subtitle {
+  margin: 1.6rem;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: 1.8rem;
 }
-.content-text{
-    font-size: 1.4rem;
-    font-weight: 1.6rem;
+.content-text {
+  font-size: 1.4rem;
+  font-weight: 1.6rem;
 }
-.content-text-img{
-    border: none;
-    max-width: 100%;
-    height: auto;
-    margin: 8px auto;
+.content-text-img {
+  border: none;
+  max-width: 100%;
+  height: auto;
+  margin: 8px auto;
 }
-.content-text-subtitle{
-    color: rgba(60, 14, 14, 1);
+.content-text-subtitle {
+  color: rgba(60, 14, 14, 1);
+}
+.tf-talk-card-text {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }

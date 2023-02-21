@@ -1,4 +1,5 @@
 @import url(./notify.css);
+
 :root {
     --white-color: #fff;
     --text-color: #333;
@@ -7,7 +8,7 @@
     --navbar-height: 50px;
     --header-with-nav-height: calc(var(--header-height) - var(--navbar-height));
     --black-color: #000;
-    --primary-color:rgba(60, 14, 14, 1);
+    --primary-color: rgb(215, 147, 0);
 }
 
 *,
@@ -81,6 +82,16 @@ li {
     background-color: gray;
 }
 
+.custom-btn-primary {
+    border: none;
+    outline: none;
+    padding: 8px 10px;
+    border-radius: 3px;
+    color: white;
+    background-color: var(--primary-color);
+    cursor: pointer;
+}
+
 /* Animation */
 
 @keyframes fadeIn {
@@ -106,15 +117,14 @@ li {
 }
 
 @media (min-width: 64em) {
-    .p-left {
-        position: relative;
-        left: 10%;
+    .container-lg {
+        padding-left: 0 !important;
     }
 
     .seperate::after {
         content: "";
         display: block;
-        border-left: 1px solid hsla(0, 0%, 100%, 0.3);
+        border-left: 1px solid hsla(0, 0%, 29%, 0.3);
         position: absolute;
         height: 16px;
         left: -8px;
@@ -126,13 +136,15 @@ li {
 
 @media (max-width: 992px) {
     .tf-header {
-        background-image: linear-gradient(to right bottom, rgba(248, 244, 244, 0.7), rgba(60, 14, 14, 0.7));
+        background-image: linear-gradient(to left top, rgba(255, 243, 217, 0.1), rgba(255, 243, 217, 1));
     }
 
-    .bg-custom-md {
-        background-image: linear-gradient(to right bottom, rgba(248, 244, 244, 0.7), rgba(60, 14, 14, 0.7)) !important;
-    }
-    .tf-navbar-list li.li-disabled{
+    .mb-disabled {
         display: none;
     }
+
+    .tf-navbar-list li.li-disabled {
+        display: none;
+    }
+
 }

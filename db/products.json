@@ -1,0 +1,82 @@
+[
+  {
+    "id": 0,
+    "categoryId":1,
+    "name": "Cà Phê Sữa Đá",
+    "thumbnail": "assets/img/product/caphesuada.png",
+    "price": 39000,
+    "number":0,
+    "type": "Đồ uống",
+    "desc": "Cà phê Đắk Lắk nguyên chất được pha phin truyền thống kết hợp với sữa đặc tạo nên hương vị đậm đà, hài hòa giữa vị ngọt đầu lưỡi và vị đắng thanh thoát nơi hậu vị"
+  },
+  {
+    "id": 1,
+    "categoryId":2,
+    "name": "Bánh Mỳ Thịt Nguội",
+    "thumbnail": "assets/img/product/banhmithitnguoi.png",
+    "price": 19000,
+    "number":0,
+    "type": "Thức ăn",
+    "desc": "Gói gọn trong ổ bánh mì Việt Nam là từng lớp chả, từng lớp jambon hòa quyện cùng bơ và pate thơm lừng, thêm dưa rau cho bữa sáng đầy năng lượng. *Phần bánh sẽ ngon và đậm đà nhất khi kèm pate. Để đảm bảo hương vị được trọn vẹn, Nhà mong bạn thông cảm vì không thể thay đổi định lượng pate."
+  },
+  {
+    "id": 2,
+    "categoryId":1,
+    "name": "Trà Sen",
+    "thumbnail": "assets/img/product/trasennong.png",
+    "price": 49000,
+    "number":0,
+    "type": "Đồ uống",
+    "desc": "Nền trà oolong hảo hạng kết hợp cùng hạt sen tươi, bùi bùi và lớp foam cheese béo ngậy. Trà hạt sen là thức uống thanh mát, nhẹ nhàng phù hợp cho cả buổi sáng và chiều tối."
+  },
+  {
+    "id": 3,
+    "categoryId":1,
+    "name": "Trà Cam Vải",
+    "thumbnail": "assets/img/product/hiteavai.png",
+    "price": 49000,
+    "number":0,
+    "type": "Đồ uống",
+    "desc": "Chút ngọt ngào của Vải, mix cùng vị chua thanh tao từ trà hoa Hibiscus, mang đến cho bạn thức uống đúng chuẩn vừa ngon, vừa healthy."
+  },
+  {
+    "id": 4,
+    "categoryId":2,
+    "name": "Bánh Mì Que",
+    "thumbnail": "assets/img/product/banhmicay.png",
+    "price": 15000,
+    "number":0,
+    "type": "Đồ ăn",
+    "desc": "Vỏ bánh mì giòn tan, kết hợp với lớp nhân pate béo béo đậm đà và 1 chút cay cay sẽ là lựa chọn lý tưởng nhẹ nhàng để lấp đầy chiếc bụng đói , cho 1 bữa sáng - trưa - chiều - tối của bạn thêm phần thú vị."
+  },
+  {
+    "id": 5,
+    "categoryId":2,
+    "name": "Bánh Chà Bông",
+    "thumbnail": "assets/img/product/chabongphomai.png",
+    "price": 30000,
+    "number":0,
+    "type": "Đồ ăn",
+    "desc": "Chiếc bánh với lớp phô mai vàng sánh mịn bên trong, được bọc ngoài lớp vỏ xốp mềm thơm lừng. Thêm lớp chà bông mằn mặn hấp dẫn bên trên."
+  },
+  {
+    "id": 6,
+    "categoryId":2,
+    "name": "Bánh Mouse Tiramisu",
+    "thumbnail": "assets/img/product/mousetiramisu.png",
+    "price": 35000,
+    "number":0,
+    "type": "Đồ ăn",
+    "desc": "Hương vị dễ ghiền được tạo nên bởi chút đắng nhẹ của cà phê, lớp kem trứng béo ngọt dịu hấp dẫn"
+  },
+  {
+    "id": 7,
+    "categoryId":1,
+    "name": "Trà Sữa Dừa",
+    "thumbnail": "assets/img/product/trasuadua.png",
+    "price": 35000,
+    "number":0,
+    "type": "Đồ uống",
+    "desc": "Từng ngụm trà chuẩn gu ấm áp, đậm đà beo béo bởi lớp sữa tươi chân ái hoà quyện. Trà đen nguyên lá âm ấm dịu nhẹ, quyện cùng lớp sữa thơm béo khó lẫn - hương vị ấm áp chuẩn gu trà, cho từng ngụm nhẹ nhàng, ngọt dịu lưu luyến mãi nơi cuống họng."
+  }
+]

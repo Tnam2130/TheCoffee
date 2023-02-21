@@ -1,0 +1,34 @@
+.tf-footer {
+    background-color: #000;
+    height: auto;
+    padding: 34px 0 54px;
+}
+
+.tf-footer-row {
+    padding: 0;
+    margin: 0;
+}
+
+.tf-footer-col-title {
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 1.8rem;
+}
+
+.tf-footer-col-linklist {
+    padding: 0;
+    margin: 0;
+}
+
+.tf-footer-col-linklist li {
+    color: var(--white-color);
+    font-size: 1.2rem;
+}
+
+.tf-footer-col hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #fff;
+    opacity: 1;
+}

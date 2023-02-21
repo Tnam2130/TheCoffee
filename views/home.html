@@ -1,0 +1,72 @@
+<!-- navbar -->
+<div ng-include src="'components/header.html'"></div>
+<div class="home-page">
+  <!-- Banner -->
+  <div ng-include src="'components/headerBanner.html'"></div>
+  <!-- Category -->
+  <div class="tf-product container container-sm my-sm-5 my-5" id="sanpham">
+    <section class="tf-product-name py-3 me-4">
+      <h2 class="tf-product-title text-center">Sản phẩm phổ biến</h2>
+      <div class="row row-cols-sm-4">
+        <a ng-repeat="product in products | limitTo: 4:0" href="#!productdetail/{{product.id}}" class="col-6 col-sm-3"
+          style="padding: 20px">
+          <div class="tf-product-card card my-1 my-sm-1">
+            <img class="tf-product-card-img card-img-top" src="{{product.thumbnail}}" alt="" />
+            <div class="card-body" style="padding: 0">
+              <div class="card-body-item p-2 p-sm-2">
+                <h3 class="card-body-item-name">{{product.name}}</h3>
+                <p class="card-body-item-price">
+                  {{product.price | vietnamCurrency}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </section>
+    <div class="d-block text-center">
+      <a class="" style="cursor: pointer; font-size: 1.6rem;" href="#!product/">Xem tất
+        cả</a>
+    </div>
+  </div>
+  <div class="tf-product container container-sm my-sm-5 my-5" id="sanpham">
+    <section class="tf-product-name py-3 me-4">
+      <h2 class="tf-product-title text-center">Món ngon tới đây! </h2>
+      <div class="row row-cols-sm-4">
+        <a ng-repeat="product in products | limitTo: 4:4" href="#!productdetail/{{product.id}}" class="col-6 col-sm-3"
+          style="padding: 20px">
+          <div class="tf-product-card card my-1 my-sm-1">
+            <img class="tf-product-card-img card-img-top" src="{{product.thumbnail}}" alt="">
+            <div class="card-body" style="padding: 0">
+              <div class="card-body-item p-2 p-sm-2">
+                <h3 class="card-body-item-name">{{product.name}}</h3>
+                <p class="card-body-item-price">
+                  {{product.price | vietnamCurrency}}
+                </p>
+              </div>
+            </div>
+          </div>
+        </a>
+    </section>
+  </div>
+  <div class="tf-talk container container-sm my-5 my-sm-5" id="blog">
+    <section class="tf-talk-name py-3 me-4">
+      <h2 class="tf-talk-title m-0 text-center">Chuyện nhà người ta</h2>
+      <div class="row row-cols-sm-3">
+        <a ng-repeat="blog in blogs" href="#!blogdetail/{{blog.id}}" class="col-12 col-sm-4 tf-talk-product">
+          <div class="card tf-talk-card">
+            <div style="border-radius: 8px; overflow: hidden;">
+              <img src="{{blog.thumbnail}}" alt="" class="tf-talk-card-img card-img-top">
+            </div>
+            <div class="tf-talk-card-body card-body">
+              <div class="tf-talk-card-subtitle card-subtitle my-2">
+                {{blog.timeStamp}}
+              </div>
+              <h3 class="tf-talk-card-title card-title">{{blog.title}}</h3>
+              <div class="tf-talk-card-text card-text">{{blog.text}}</div>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  </div>
+</div>
