@@ -146,5 +146,7 @@ li {
     .tf-navbar-list li.li-disabled {
         display: none;
     }
-
+    .mb-20{
+        margin-bottom: 20px;
+    }
 }

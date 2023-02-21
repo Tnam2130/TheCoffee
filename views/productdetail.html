@@ -14,10 +14,10 @@
             </div>
         </div>
         <div class="row">
-            <div class="col col-lg-6 px-5">
+            <div class="col-lg-6 col-md-12 col-sm-12 mb-20 px-lg-5">
                 <img src="{{product.thumbnail}}" alt="">
             </div>
-            <div class="col col-lg-6 px-5">
+            <div class="col-lg-6 col-sm-12 px-lg-5">
                 <h4 style="font-size: 3.2rem; line-height: 3.2rem; color: var(--text-color);">
                     {{product.name}}
                 </h4>
@@ -35,10 +35,29 @@
                         style="font-size: 1.8rem; font-weight: 500;">Đặt hàng</span></button>
             </div>
         </div>
-        <div class="row my-5">
+        <section class="row my-5">
             <div class="col">
                 <h3 class="my-2 text-center" style="font-size: 1.8rem;">Mô tả sản phẩm</h3>
                 <p class="" style="font-size: 1.4rem; font-weight: 400; margin-bottom: 60px;">{{product.desc}}</p>
+            </div>
+            <hr style="margin-bottom: 16px;">
+        </section>
+        <div class="row">
+            <h3 class="col-12 text-center mb-lg-5 mb-sm-5 fw-bold" style="font-size: 1.8rem;">CÁC SẢN PHẨM LIÊN QUAN!!!</h3>
+            <div class="row row-cols-lg-4 row-cols-md-2 row-cols-sm-1" style="margin-bottom: 36px;">
+                <a ng-repeat="product in products | limitTo: 4:0" href="#!productdetail/{{product.id}}" class="col-6 col-sm-3">
+                    <div class="tf-product-card card my-1 my-sm-1">
+                        <img class="tf-product-card-img card-img-top" src="{{product.thumbnail}}" alt="" />
+                        <div class="card-body" style="padding: 0">
+                            <div class="card-body-item p-2 p-sm-2">
+                                <h3 class="card-body-item-name">{{product.name}}</h3>
+                                <p class="card-body-item-price">
+                                    {{product.price | vietnamCurrency}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </a>
             </div>
             <hr style="margin-bottom: 60px;">
         </div>
